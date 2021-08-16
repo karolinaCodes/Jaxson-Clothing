@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" defer src="script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>Products</title>
+  </head>
+  <header>
+    <div class="left-tabs">
+      <ul class="left-nav">
+        <li><a href="../home-page/index.html">Home</a></li>
+        <li><a href="./products.html">Products</a></li>
+        <li><a href="../about-page/about.html">About</a></li>
+      </ul>
+    </div>
+
+    <h1 class="heading"><a href="../home-page/index.html"> JAXSON </a></h1>
+
+    <div class="right-tabs">
+      <ul class="right-nav">
+        <div class="nav-socials">
+          <li>
+            <a href="#">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+        </div>
+        <li id="shopping-cart">
+          <a href="#">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <body>
+    <div class="body">
+      <div class="middle-section">
+        <!--products-page= the page that contains the products as opposed to the page that contains the single product description-->
+        <div class="products-page">
+          <div class="dropdown-container">
+            <select name="dropdown-menu" class="dropdown">
+              <option disabled selected>Sort by</option>
+              <option value="popularity">Popularity</option>
+              <option value="low-high">Low to High</option>
+              <option value="high-low">High to Low</option>
+              <option value="newest">Newest</option>
+            </select>
+          </div>
+
+          <!---products section-->
+          <div class="products"></div>
+
+          <!--pagination buttons-->
+          <div class="pagination">
+            <ul class="numbers"></ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- side shopping cart -->
+      <div class="cart-overlay">
+        <div class="cart">
+          <header class="cart-header">
+            Your Cart
+            <span class="close-cart">
+              <i class="fas fa-times"></i>
+            </span>
+          </header>
+          <div class="cart-content"></div>
+          <!-- end cart item -->
+          <div class="cart-footer">
+            <div class="subtotal">
+              <h3>Subtotal</h3>
+              <h3 id="number">
+                $ <span class="cart-total">0 </span><span> USD</span>
+              </h3>
+            </div>
+            <button class="checkout-btn banner-btn">
+              CONTINUE TO CHECKOUT
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- end of cart -->
+    </div>
+  </body>
+</html>
