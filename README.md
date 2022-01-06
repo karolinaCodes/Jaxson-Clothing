@@ -1,2 +1,2 @@
 # Jaxson-Clothing
-An e-commerce clothing site!
+An independently built, multi-featured e-commerce clothing site.
